@@ -12,6 +12,10 @@
 		689F464125B4CA7B0046343B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689F463F25B4CA7B0046343B /* Main.storyboard */; };
 		689F464325B4CA880046343B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689F464225B4CA880046343B /* Assets.xcassets */; };
 		689F464625B4CA880046343B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689F464425B4CA880046343B /* LaunchScreen.storyboard */; };
+		689F466B25B519450046343B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689F466A25B519450046343B /* HomeViewController.swift */; };
+		689F467425B5FCD40046343B /* GMTableViewcellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689F467025B5FCD40046343B /* GMTableViewcellTableViewCell.swift */; };
+		689F467A25B5FE5B0046343B /* GMCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689F467925B5FE5B0046343B /* GMCommit.swift */; };
+		689F467D25B5FE730046343B /* GMServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689F467C25B5FE730046343B /* GMServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		689F464225B4CA880046343B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		689F464525B4CA880046343B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		689F464725B4CA880046343B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689F466A25B519450046343B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		689F467025B5FCD40046343B /* GMTableViewcellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMTableViewcellTableViewCell.swift; sourceTree = "<group>"; };
+		689F467925B5FE5B0046343B /* GMCommit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMCommit.swift; sourceTree = "<group>"; };
+		689F467C25B5FE730046343B /* GMServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		689F463825B4CA7B0046343B /* GMGitProject */ = {
 			isa = PBXGroup;
 			children = (
+				689F468025B60AE50046343B /* Views */,
+				689F467825B5FE170046343B /* Model */,
+				689F467725B5FE0D0046343B /* Network */,
+				689F466825B518F50046343B /* ViewController */,
 				689F465125B4D4280046343B /* Delegate */,
 				689F463F25B4CA7B0046343B /* Main.storyboard */,
 				689F464225B4CA880046343B /* Assets.xcassets */,
@@ -70,6 +82,40 @@
 				689F463B25B4CA7B0046343B /* SceneDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		689F466825B518F50046343B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				689F466A25B519450046343B /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		689F467725B5FE0D0046343B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				689F467C25B5FE730046343B /* GMServiceManager.swift */,
+			);
+			name = Network;
+			path = ../Network;
+			sourceTree = "<group>";
+		};
+		689F467825B5FE170046343B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				689F467925B5FE5B0046343B /* GMCommit.swift */,
+			);
+			name = Model;
+			path = ../Model;
+			sourceTree = "<group>";
+		};
+		689F468025B60AE50046343B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				689F467025B5FCD40046343B /* GMTableViewcellTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				689F463A25B4CA7B0046343B /* AppDelegate.swift in Sources */,
+				689F467425B5FCD40046343B /* GMTableViewcellTableViewCell.swift in Sources */,
+				689F467A25B5FE5B0046343B /* GMCommit.swift in Sources */,
+				689F467D25B5FE730046343B /* GMServiceManager.swift in Sources */,
 				689F463C25B4CA7B0046343B /* SceneDelegate.swift in Sources */,
+				689F466B25B519450046343B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
