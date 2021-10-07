@@ -13,6 +13,8 @@ class GMTableViewcellTableViewCell: UITableViewCell {
     @IBOutlet weak var authorNamelabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
+    
+    
     func initializeDataWithModel(_ commit: GMCommit) {
         commentLablel.text = commit.commit.message
         authorNamelabel.text = commit.commit.author.name
